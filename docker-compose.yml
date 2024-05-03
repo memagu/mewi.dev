@@ -11,6 +11,7 @@ services:
         depends_on:
             - template
             - www
+        restart: unless-stopped
     template:
         image: template
         expose:
